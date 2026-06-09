@@ -18,6 +18,31 @@
             border: 1px solid #ddd;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #2563eb;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 8px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 6px rgba(37,99,235,0.3);
+        }
+
+        .download-btn:hover {
+            background-color: #1d4ed8;
+            box-shadow: 0 4px 12px rgba(37,99,235,0.4);
+        }
+
+        .download-btn svg {
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +64,22 @@
 <div class="container">
     <!-- Titolo pagina -->
     <h2>Curriculum</h2>
+
+    <!-- Download CV -->
+    <div class="card">
+        <h3>Scarica il Curriculum</h3>
+        <p>Clicca il pulsante per scaricare il curriculum completo in formato PDF.</p>
+        <a class="download-btn" href="Curriculum_CRMRCR07P12A271E.pdf" download>
+            <svg xmlns="[w3.org](http://www.w3.org/2000/svg)" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Scarica CV (PDF)
+        </a>
+    </div>
+
     <!-- Informazioni personali -->
     <div class="card">
         <h3>Informazioni Personali</h3>
