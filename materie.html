@@ -97,23 +97,28 @@ avvicinandosi alla poetica simbolista francese.
 <h3>Inglese</h3>
 <p>L'inglese è stato affrontato con un taglio prevalentemente tecnico, focalizzandosi sul linguaggio specifico dell'informatica e delle telecomunicazioni. Ho studiato testi e documenti in lingua su argomenti come le architetture di rete, i protocolli di comunicazione, la cybersecurity e i database. Parallelamente ho consolidato le competenze grammaticali e comunicative, con esercizi di comprensione scritta e orale legati a contesti professionali del settore IT.</p>
 
-<h4>Approfondimento: The Victorian Age</h4>
+<h4>Approfondimento: E-Commerce and Cashless Society</h4>
 
 <p>
-The Victorian Age refers to the period of Queen Victoria's reign over the United Kingdom,
-from 1837 to 1901. It was an era of profound transformation: rapid industrialisation,
-urban growth, scientific progress and the expansion of the British Empire
-made Britain the most powerful nation in the world.
+E-commerce is business conducted via the Internet: payment is electronic, not a physical transaction. Payment methods include credit cards, smart cards (with chips), contactless, PayPal, and mobile payments.
+
+✓ PROS	                                            ✗ CONS
+Costs reduced (orders/payments automated)	        Expensive setup for small companies (website, ads)
+Transactions faster	                                Risk of fraud
+Buy from anywhere at any time (global market)	    Customers can't physically examine products
+Every company can compete and showcase products	    Payment in advance required
+Contact with customers via email/newsletters	
+Lower prices — customers can compare
 </p>
+    
+<h4>Approfondimento: 3D Printing</h4>
 
 <p>
-<strong>Society and contradictions:</strong> Victorian society was deeply divided.
-On one side stood the wealthy middle class, which celebrated progress, hard work,
-moral values and respectability. On the other, the working class lived in poverty,
-often in overcrowded slums, working long hours in dangerous factories and mines.
-Child labour was widespread, and social inequality was extreme.
-This contradiction between surface prosperity and hidden suffering
-became one of the central themes of Victorian literature.
+A 3D printer creates objects layer by layer from digital designs. 
+A 'slicer' software divides the object into thin layers. 
+Common materials include plastic filaments, metal powder, ceramic, photo-sensitive liquids, and even chocolate. 
+Applications: prototyping, medical devices, aerospace, custom manufacturing. Moving parts (e.g. wheels) can be printed already assembled. 
+Currently prices are high, but costs are declining.
 </p>
 
 <p>
@@ -247,94 +252,28 @@ per le API REST moderne grazie alla sua compatibilità nativa con JavaScript.
 <h3>Sistemi e Reti</h3>
 <p>In questa materia ho acquisito una solida base teorica e pratica sulle reti informatiche. Ho studiato il modello OSI e TCP/IP, la subnetting e l'assegnazione degli indirizzi IP, i principali protocolli di comunicazione (HTTP, DNS, DHCP, FTP) e le tecniche di routing e switching. Ho anche affrontato temi legati alla sicurezza informatica, come firewall, VPN, crittografia e le principali tipologie di attacchi informatici e le relative contromisure.</p>
 
-<h4>Approfondimento: Reti Wireless</h4>
+<h4>Approfondimento: acl(access control list)</h4>
 
 <p>
-Le reti wireless (o reti senza fili) consentono la trasmissione di dati
-tra dispositivi senza l'utilizzo di cavi fisici,
-sfruttando onde radio o infrarossi.
-Sono oggi alla base della connettività moderna,
-dai telefoni smartphone ai dispositivi IoT,
-dalle reti aziendali alle reti domestiche.
-</p>
-
-<p>
-<strong>Standard Wi-Fi (IEEE 802.11):</strong> il protocollo più diffuso
-per le reti wireless locali è definito dallo standard IEEE 802.11,
-comunemente noto come Wi-Fi.
-Nel corso degli anni sono state sviluppate diverse versioni:
-</p>
-<p>
-- <strong>802.11b/g</strong>: prime versioni diffuse, operanti a 2,4 GHz,
-con velocità fino a 54 Mbps.
-</p>
-<p>
-- <strong>802.11n (Wi-Fi 4)</strong>: introduce la tecnologia MIMO
-(Multiple Input Multiple Output), che utilizza più antenne
-per aumentare velocità e portata, fino a 600 Mbps.
-</p>
-<p>
-- <strong>802.11ac (Wi-Fi 5)</strong>: opera principalmente a 5 GHz,
-offrendo velocità fino a diversi Gbps grazie al MU-MIMO
-e alla maggiore larghezza di banda dei canali.
-</p>
-<p>
-- <strong>802.11ax (Wi-Fi 6/6E)</strong>: lo standard più recente,
-progettato per ambienti ad alta densità di dispositivi.
-Introduce OFDMA per migliorare l'efficienza della trasmissione
-e ridurre la latenza, con velocità teoriche fino a 9,6 Gbps.
+1. Cosa sono e come funzionano
+Le ACL sono liste di istruzioni applicate alle interfacce di un router per filtrare il traffico di rete in entrata e in uscita. Vengono utilizzate per fornire sicurezza base, limitare il traffico migliorando le performance (queuing) e decidere esattamente quale tipo di traffico può passare.
+La regola fondamentale del loro funzionamento è l'elaborazione sequenziale:
+Il router legge le regole dall'alto verso il basso in base all'ordine in cui sono state inserite.
+Appena un pacchetto soddisfa una condizione, il router esegue l'azione (permit o deny) e ignora il resto della lista.
+Se il pacchetto arriva alla fine della lista senza soddisfare alcuna condizione, viene scartato per via di una regola implicita (deny any) presente alla fine di ogni ACL.
 </p>
 
 <p>
-<strong>Architetture delle reti wireless:</strong>
-</p>
-<p>
-- <strong>Modalità infrastruttura</strong>: i dispositivi si connettono
-attraverso un Access Point (AP), che gestisce il traffico
-e funge da ponte verso la rete cablata.
-È la modalità più comune nelle reti domestiche e aziendali.
-</p>
-<p>
-- <strong>Modalità ad hoc</strong>: i dispositivi comunicano
-direttamente tra loro senza un Access Point centrale.
-Utile per connessioni temporanee tra pochi dispositivi.
-</p>
-<p>
-- <strong>Reti mesh</strong>: più Access Point collaborano
-per coprire aree estese eliminando le zone d'ombra,
-garantendo una copertura uniforme e un roaming trasparente.
-</p>
+2. Differenze: Standard vs Estese
 
-<p>
-<strong>Sicurezza nelle reti wireless:</strong> la trasmissione via radio
-rende le reti wireless potenzialmente più vulnerabili rispetto a quelle cablate.
-I principali protocolli di sicurezza sviluppati nel tempo sono:
-</p>
-<p>
-- <strong>WEP (Wired Equivalent Privacy)</strong>: il primo protocollo
-di cifratura per Wi-Fi, oggi considerato obsoleto e insicuro
-per via di gravi vulnerabilità crittografiche.
-</p>
-<p>
-- <strong>WPA / WPA2</strong>: protocolli più robusti che utilizzano
-la cifratura AES e l'autenticazione tramite password (PSK)
-o server RADIUS per ambienti aziendali.
-WPA2 è ancora ampiamente utilizzato.
-</p>
-<p>
-- <strong>WPA3</strong>: lo standard più recente, che introduce
-la cifratura SAE (Simultaneous Authentication of Equals)
-per una maggiore resistenza agli attacchi a dizionario
-e una migliore protezione anche su reti pubbliche.
-</p>
-
-<p>
-<strong>Altre tecnologie wireless:</strong> oltre al Wi-Fi,
-esistono altre tecnologie wireless con caratteristiche e usi differenti:
-Bluetooth per connessioni a corto raggio tra dispositivi personali,
-Zigbee e Z-Wave per dispositivi IoT a basso consumo energetico,
-e le reti cellulari (4G LTE e 5G) per la connettività mobile
-su scala geografica ampia.
+ACL Standard
+Cosa controllano: Effettuano il controllo esclusivamente sull'indirizzo IP del mittente (sorgente).
+Identificativo: Usano numeri che vanno da 1 a 99.
+Posizionamento strategico: Vanno posizionate il più vicino possibile alla destinazione.
+ACL Estese
+Cosa controllano: Offrono molta più flessibilità. Possono filtrare in base all'IP del mittente, all'IP del destinatario, a uno specifico protocollo (IP, TCP, UDP, ICMP) e al numero di porta (es. 21 per FTP, 80 per WWW).
+Identificativo: Usano numeri che vanno da 100 a 199 (e da 2000 a 2699).
+Posizionamento strategico: Vanno posizionate il più vicino possibile alla sorgente.
 </p>
 </div>
 
